@@ -9,10 +9,16 @@ struct node
     struct node* right;
 };
 int isBSTUtil(struct node* node, int min, int max);
+
+
+
 int isBST(struct node* node)
 {
   return(isBSTUtil(node, INT_MIN, INT_MAX));
 }
+
+
+
 int isBSTUtil(struct node* node, int min, int max)
 {
   if (node==NULL)
